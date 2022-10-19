@@ -50,6 +50,8 @@ const ThreeCanvas = () => {
     const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
     scene.add(boxMesh);
 
+    boxMesh.position.y -= 8;
+
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(boxMesh.rotation, {
       scrollTrigger: {
@@ -71,9 +73,7 @@ const ThreeCanvas = () => {
         scrub: true,
       },
 
-      y: camera.position.y + 15,
-      z: camera.position.z - 30,
-
+      y: camera.position.y + 10,
       ease: "linear",
 
       duration: 1,
