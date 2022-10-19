@@ -25,7 +25,6 @@ function App() {
         start: `bottom ${window.innerHeight / 2}`,
 
         toggleActions: "play reverse play reset",
-        markers: true,
       },
       duration: 1,
       opacity: 0,
@@ -37,7 +36,6 @@ function App() {
         start: `bottom ${window.innerHeight / 2}`,
 
         toggleActions: "play reverse play reset",
-        markers: true,
       },
       duration: 1,
       opacity: 0,
